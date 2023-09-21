@@ -1,3 +1,19 @@
+## 优化内容
+
+|❌ 原 xhgui-branch |✅ 现 xhgui-liamhao |
+|-|-|
+|默认**收起**搜索栏![pPIdyd0.png](https://z1.ax1x.com/2023/09/21/pPIdyd0.png)|默认**展开**搜索栏![pPIdDLn.png](https://z1.ax1x.com/2023/09/21/pPIdDLn.png)|
+|时间搜索框无法选择到时分秒![pPIdaRg.png](https://z1.ax1x.com/2023/09/21/pPIdaRg.png)|时间搜索框支持时分秒筛选![pPIdeIK.png](https://z1.ax1x.com/2023/09/21/pPIdeIK.png)|
+|针对`graphql`和`json`请求，无法查看`body`数据![pPIrr5t.png](https://z1.ax1x.com/2023/09/21/pPIrr5t.png)|补充了`query`和`body`的记录![pPIrwbd.png](https://z1.ax1x.com/2023/09/21/pPIrwbd.png)|
+|随着mongodb存储量增多，数据库查询效率低![pPIrzI1.png](https://z1.ax1x.com/2023/09/21/pPIrzI1.png)|修改了数据结构、添加索引提高查询效率![pPIs9G6.png](https://z1.ax1x.com/2023/09/21/pPIs9G6.png)|
+
+> ⚠️ 为了提高搜索效率，需要登陆到 mongo 数据库中，手动执行以下命令，来创建索引：
+> ```
+> > use xhprof
+> > db.results.createIndex({created_at:-1})
+> > db.results.createIndex({url:1,created_at:-1})
+> ```
+
 ## 最新
 新版本已开发完成，做了如下改进：
 
