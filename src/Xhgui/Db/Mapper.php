@@ -134,7 +134,7 @@ class Xhgui_Db_Mapper
             $direction = 1;
         }
 
-        $valid = array('time', 'wt', 'mu', 'cpu');
+        $valid = array('time', 'wt', 'mu', 'cpu', 'pmu');
         if (
             empty($options['sort']) ||
             (isset($options['sort']) && !in_array($options['sort'], $valid))
@@ -151,6 +151,8 @@ class Xhgui_Db_Mapper
             return array('profile.main().mu' => $direction);
         } elseif ($options['sort'] == 'cpu') {
            return array('profile.main().cpu' => $direction);
+        } elseif ($options['sort'] == 'pmu') {
+            return array('profile.main().pmu' => $direction);
         }
     }
 
