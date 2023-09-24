@@ -7,6 +7,7 @@
 |针对`graphql`和`json`请求，无法查看`body`数据![pPIrr5t.png](https://z1.ax1x.com/2023/09/21/pPIrr5t.png)|补充了`query`和`body`的记录![pPIrwbd.png](https://z1.ax1x.com/2023/09/21/pPIrwbd.png)|
 |随着mongodb存储量增多，数据库查询效率低![pPIrzI1.png](https://z1.ax1x.com/2023/09/21/pPIrzI1.png)|修改了数据结构、添加索引提高查询效率![pPIs9G6.png](https://z1.ax1x.com/2023/09/21/pPIs9G6.png)|
 |**存在**无法按照`内存峰值`的值进行正排序/倒排序的bug![pPI6xaj.png](https://z1.ax1x.com/2023/09/21/pPI6xaj.png)|**解决**无法按照`内存峰值`的值进行正排序/倒排序的bug![pPI6vZQ.png](https://z1.ax1x.com/2023/09/21/pPI6vZQ.png)|
+|内存单位显示错误![pPTzTMt.png](https://z1.ax1x.com/2023/09/24/pPTzTMt.png)|内存单位使用MB![pPTzqZ8.png](https://z1.ax1x.com/2023/09/24/pPTzqZ8.png)|
 
 > ⚠️ 为了提高搜索效率，需要登陆到 mongo 数据库中，手动执行以下命令，来创建索引：
 > ```

@@ -35,11 +35,11 @@
             </tr>
             <tr>
                 <th>包含内存占用</th>
-                <td>{{ helpers.time_and_percent('mu', current, main) }}</td>
+                <td>{{ helpers.bytes_and_percent('mu', current, main) }}</td>
             </tr>
             <tr>
                 <th>包含内存占用峰值</th>
-                <td>{{ helpers.time_and_percent('pmu', current, main) }}</td>
+                <td>{{ helpers.bytes_and_percent('pmu', current, main) }}</td>
             </tr>
         </tbody>
     </table>
